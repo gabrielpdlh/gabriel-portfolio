@@ -1,17 +1,21 @@
 "use client";
 
 import Beams from "@/components/beams-background";
-
-import { motion } from "framer-motion";
+import HeroSectionOne from "@/components/hero-section-demo-1";
 
 interface HeroSectionProps {
   title: string;
+  subtitle: string;
   description: string;
 }
 
-export const HeroSection = ({ title, description }: HeroSectionProps) => {
+export const HeroSection = ({
+  title,
+  subtitle,
+  description,
+}: HeroSectionProps) => {
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full h-screen relative">
       <div className="absolute inset-0 w-full h-full">
         <Beams
           beamWidth={4.1}
@@ -24,22 +28,12 @@ export const HeroSection = ({ title, description }: HeroSectionProps) => {
           rotation={41}
         />
       </div>
-      <div className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold  md:text-4xl lg:text-7xl">
-        <motion.h1
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 0.3,
-            delay: 0.8,
-          }}
-          className="text-4xl font-asgard font-bold"
-        >
-          {title}
-        </motion.h1>
+      <div className="relative z-10 mx-auto max-w-4xl h-full flex items-center justify-center">
+        <HeroSectionOne
+          title={title}
+          description={description}
+          subtitle={subtitle}
+        />
       </div>
     </div>
   );
