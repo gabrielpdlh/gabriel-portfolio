@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface HeroSectionOneProps {
   title: string;
@@ -82,8 +83,14 @@ export default function HeroSectionOne({
           <Button size="lg" className="min-w-[200px]">
             Let&apos;s Get In Touch
           </Button>
-          <Button size="lg" variant="outline" className="min-w-[200px]">
-            View Resume
+          <Button size="lg" variant="outline" className="min-w-[200px]" asChild>
+            <Link 
+              href="/Currículo-Gabriel-Padilha-Desenvolvedor(1).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </Link>
           </Button>
         </motion.div>
       </div>

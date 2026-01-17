@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { asgardFont, poppins } from "./ui/fonts";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Gabriel Padilha - Full Stack Developer",
@@ -21,6 +22,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Resume", href: "/resume" },
+  { name: "Home", href: "/", external: false },
+  { name: "About", href: "/about", external: false },
+  { name: "Resume", href: "/Currículo-Gabriel-Padilha-Desenvolvedor(1).pdf", external: true },
 ];
 
 export function Navbar() {
@@ -45,6 +45,8 @@ export function Navbar() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
                       className={cn(
                         "relative px-3 py-2 text-sm font-medium transition-colors rounded-lg",
                         "hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
