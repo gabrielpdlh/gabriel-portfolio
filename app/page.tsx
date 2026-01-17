@@ -7,7 +7,7 @@ export default function Home() {
       <HeroSection
         title="Hi. i'm Gabriel"
         subtitle="Full Stack Developer"
-        description="Building scalable full-stack applications with a strong focus on performance, architecture, and user experience."
+        description="+3 Years building scalable full-stack applications with a strong focus on performance, architecture, and user experience."
       />
       <TechStackSection />
     </>
