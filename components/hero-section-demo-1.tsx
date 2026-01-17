@@ -80,8 +80,14 @@ export default function HeroSectionOne({
           }}
           className="relative z-10 flex flex-wrap items-center justify-center gap-4"
         >
-          <Button size="lg" className="min-w-[200px]">
-            Let&apos;s Get In Touch
+          <Button size="lg" className="min-w-[200px]" asChild>
+            <Link 
+              href="https://www.linkedin.com/in/gabriel-padilha-85a702260/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Let&apos;s Get In Touch
+            </Link>
           </Button>
           <Button size="lg" variant="outline" className="min-w-[200px]" asChild>
             <Link 
