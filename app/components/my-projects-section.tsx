@@ -36,7 +36,7 @@ const projects: Project[] = [
       "Next.js",
       "TypeScript",
       "PostgreSQL",
-      "Prisma",
+      "Drizzle",
       "Zod",
       "Stripe",
     ],
