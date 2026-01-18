@@ -45,9 +45,17 @@ const projects: Project[] = [
   },
   {
     id: "3",
+    name: "Lenna Santos - Landing Page",
+    description: "Beautician landing page with portfolio and contact form.",
+    image: "/lenna-image.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/gabrielpdlh/lenna-beauty-flow",
+    liveUrl: "https://lennasantosesteticista.com.br/",
+  },
+  {
+    id: "4",
     name: "Casare App",
-    description:
-      "Full-stack web saas for wedding planning and management.",
+    description: "Full-stack web saas for wedding planning and management.",
     image: "/casare-image.png",
     technologies: ["Next.js", "TypeScript", "Drizzle", "PostgreSQL"],
     githubUrl: "",
